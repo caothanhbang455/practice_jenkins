@@ -44,7 +44,7 @@ pipeline {
                 echo 'Testing model training and predictions...'
                 sh '''
                     . venv/bin/activate
-                    pytest tests/test_model.py -v --tb=short
+                    pytest test/test_model.py -v --tb=short
                 '''
             }
         }
